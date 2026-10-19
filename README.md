@@ -165,3 +165,55 @@ Developed as a collaborative software project. Add the actual contributor names 
 ## License
 
 No license has been specified yet. Add a license file if you intend to permit reuse or distribution of this project.
+
+
+## Application Screenshots
+
+### 1. Admin Authentication
+![Admin Authentication](screenshots/admin_authentication.png)
+
+### 2. Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
+### 3. Student Login
+![Student Login](screenshots/Student_Login.png)
+
+### 4. Login Success
+![Login Success](screenshots/login_success.png)
+
+### 5. Student Profile
+![Student Profile](screenshots/profile.png)
+
+### 6. Resume Template Selection
+![Template Selection](screenshots/template_selection.png)
+
+### 7. Resume Preview
+![Resume Preview](screenshots/preview.png)
+
+### 8. Download Resume
+![Download Resume](screenshots/download_resume.png)
+
+### 9. AI Self-Introduction
+![Self Introduction](screenshots/self_introduction.png)
+
+### 10. Generated Introduction Output
+![Generated Introduction](screenshots/output_self_intro.png)
+
+### 11. Job Creation
+![Job Creation](screenshots/job_creation.png)
+
+### 12. Job Creation Success
+![Job Created Successfully](screenshots/job_crated_success.png)
+
+### 13. Job List
+![Job List](screenshots/job_list.png)
+
+### 14. Student List
+![Student List](screenshots/student_list.png)
+
+### 15. Student Ranking — View 1
+![Student Ranking 1](screenshots/ranking_1.png)
+
+### 16. Student Ranking — View 2
+![Student Ranking 2](screenshots/ranking_2.png)
+
