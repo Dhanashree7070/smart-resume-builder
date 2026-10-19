@@ -200,10 +200,10 @@ No license has been specified yet. Add a license file if you intend to permit re
 ![Generated Introduction](screenshots/output_self_intro.png)
 
 ### 11. Job Creation
-![Job Creation](screenshots/job_creation.png)
+![Job Creation](screenshots/job_craetion.png)
 
 ### 12. Job Creation Success
-![Job Created Successfully](screenshots/job_crated_success.png)
+![Job Created Successfully](screenshots/job_crrated_success.png)
 
 ### 13. Job List
 ![Job List](screenshots/job_list.png)
