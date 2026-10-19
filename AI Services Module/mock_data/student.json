@@ -1,0 +1,125 @@
+{
+  "id": "69a99961e06cda68e9891f0a",
+  "fullName": "Mrunali Patil",
+  "email": "mrunali@gmail.com",
+  "password": "$2a$10$xyym6sJy/aO1Z6ZgSG6GBOZN3DpowOqB0jqjFRCcE35Ca5TBfXw.S",
+  "phone": "9876543210",
+  "linkedin": "https://linkedin.com/in/mrunali",
+  "github": "https://github.com/mrunali",
+  "portfolio": "https://mrunali.dev",
+  "location": "Pune",
+  "cgpa": 9.2,
+  "role": "STUDENT",
+  "summary": "Computer Engineering student passionate about AI and Data Science with hands-on backend and analytics experience.",
+  "skills": [
+    "Java",
+    "Python",
+    "MongoDB",
+    "Git",
+    "Spring Boot",
+    "Power BI"
+  ],
+  "education": [
+    {
+      "degree": "B.E. Computer Engineering",
+      "institution": "KITCOEK",
+      "year": "2023-2027",
+      "cgpa": 8.2
+    },
+    {
+      "degree": "HSC (12th)",
+      "institution": "ABC Junior College",
+      "year": "2021-2023",
+      "cgpa": 85.4
+    },
+    {
+      "degree": "SSC (10th)",
+      "institution": "XYZ School",
+      "year": "2019-2021",
+      "cgpa": 92.1
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Resume Builder",
+      "techStack": "Spring Boot, MongoDB, React",
+      "startDate": "Jan 2026",
+      "endDate": "Mar 2026",
+      "description": [
+        "Developed secure REST APIs using Spring Boot with proper validation and exception handling.",
+        "Implemented JWT-based authentication and role-based authorization.",
+        "Integrated MongoDB for profile and resume storage with optimized query patterns.",
+        "Added ATS scoring integration and PDF resume generation workflow."
+      ],
+      "githubLink": "https://github.com/mrunali/resume-builder"
+    },
+    {
+      "title": "Student Analytics Dashboard",
+      "techStack": "Python, FastAPI, Power BI",
+      "startDate": "Aug 2025",
+      "endDate": "Nov 2025",
+      "description": [
+        "Built backend APIs to aggregate placement and performance metrics.",
+        "Prepared cleaned datasets and transformed records for visualization.",
+        "Designed Power BI dashboards for trend analysis and decision support."
+      ],
+      "githubLink": "https://github.com/mrunali/student-analytics"
+    }
+  ],
+  "experience": [
+    {
+      "jobTitle": "Data Analytics Intern",
+      "company": "Krutanic",
+      "location": "Remote",
+      "startDate": "Jul 2024",
+      "endDate": "Oct 2024",
+      "responsibilities": [
+        "Performed data cleaning and preprocessing on large CSV datasets.",
+        "Built dashboards using Power BI for business KPIs.",
+        "Assisted in predictive modeling tasks and presented weekly insights."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Data Analytics Internship",
+      "organization": "Krutanic",
+      "year": "2024"
+    },
+    {
+      "name": "Python for Data Science",
+      "organization": "NPTEL",
+      "year": "2025"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Smart India Hackathon",
+      "description": "Built Nagrik Aur Samvidhan platform for constitutional literacy."
+    },
+    {
+      "title": "Top 5 Finalist - College Hackathon",
+      "description": "Led backend module and integrated AI scoring workflow."
+    }
+  ]
+}
+
+
+{
+  "resume_skills": [
+    "Java",
+    "Python",
+    "Spring Boot",
+    "REST APIs",
+    "MySQL",
+    "Git"
+  ],
+  "job_keywords": [
+    "Java",
+    "Spring Boot",
+    "SQL",
+    "Microservices",
+    "Teamwork"
+  ],
+  "job_description": "Looking for candidates with Java, Spring Boot, SQL, REST API development, microservices understanding, and strong teamwork."
+}

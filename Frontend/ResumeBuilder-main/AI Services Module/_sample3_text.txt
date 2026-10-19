@@ -1,0 +1,43 @@
+pages: 1
+
+===== PAGE 1 =====
+Alex Webb
+555-123-4567 | alex@email.com | linkedin.com/in/alexwebbx | github.com/alexwebbx
+SUMMARY
+Passionate AI/ML engineer with a strong background in deep learning, computer vision, and natural language processing.
+Skilled in Python, TensorFlow, PyTorch, and various ML libraries. Excellent problem-solving, research, and collaboration
+abilities. Seeking a challenging role to develop cutting-edge AI solutions.
+TECHNICAL SKILLS
+Programming Languages: Python, C++, SQL, MATLAB
+Deep Learning Frameworks: TensorFlow, PyTorch, Keras, Caffe
+Libraries & T ools: NumPy, Pandas, Scikit-learn, OpenCV , NL TK, Git, Docker
+PROJECTS
+Image Captioning System Jan 2023 – Present
+Deep Learning Project Python, TensorFlow, OpenCV
+• Developed an end-to-end system for generating descriptive captions for images
+• Utilized CNN and LSTM models for image feature extraction and caption generation
+• Achieved state-of-the-art performance on the COCO dataset
+Sentiment Analysis API Aug 2022 – Dec 2022
+Natural Language Processing Python, Flask, NL TK, Hugging Face
+• Built a RESTful API for sentiment analysis of text data
+• Implemented pre-trained transformer models using Hugging Face
+• Deployed the API on a cloud platform for easy integration
+EXPERIENCE
+AI Research Intern June 2022 – Aug 2022
+DeepMind London, UK
+• Conducted research on reinforcement learning algorithms for robotics
+• Implemented and evaluated deep RL models using PyTorch and RLlib
+• Presented ﬁndings at weekly research meetings
+Machine Learning Engineer Jan 2021 – May 2022
+Acme AI Solutions San Francisco, CA
+• Developed and deployed machine learning models for various industries
+• Optimized model performance and ensured data quality
+• Collaborated with cross-functional teams to deliver AI solutions
+EDUCATION
+Stanford University Stanford, CA
+M.S. in Computer Science, Artiﬁcial Intelligence Aug 2019 – May 2021
+University of California, Berkeley Berkeley, CA
+B.S. in Electrical Engineering and Computer Science Aug 2015 – May 2019
+CERTIFICATIONS
+• AWS Certiﬁed Machine Learning - Specialty
+• TensorFlow Developer Certiﬁcate

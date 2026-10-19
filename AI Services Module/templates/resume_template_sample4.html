@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }} Resume</title>
+    <style>
+        @page { margin: 22px; }
+
+        body {
+            margin: 0;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.8px;
+            line-height: 1.42;
+            background: #fff;
+        }
+
+        .resume {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            border: 1px solid #ded4cb;
+        }
+
+        .sidebar,
+        .main {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .sidebar {
+            width: 35%;
+            background: #f2e6db;
+            padding: 20px 18px 18px;
+        }
+
+        .main {
+            width: 65%;
+            background: #fbfbfb;
+            padding: 20px 22px 18px;
+        }
+
+        .section {
+            margin-bottom: 14px;
+        }
+
+        .section h2 {
+            margin: 0 0 7px;
+            font-size: 12.4px;
+            text-transform: uppercase;
+            color: #8b5e42;
+            border-bottom: 1px solid #b79681;
+            padding-bottom: 3px;
+            letter-spacing: 0.7px;
+        }
+
+        .main h1 {
+            margin: 0 0 3px;
+            font-size: 40px;
+            line-height: 0.96;
+            letter-spacing: 0.4px;
+            color: #855a40;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            margin: 0 0 12px;
+            font-size: 14px;
+            color: #3f3f3f;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .muted {
+            color: #4e4e4e;
+        }
+
+        .entry {
+            margin-bottom: 10px;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-title {
+            font-size: 11.9px;
+            font-weight: 700;
+            color: #2b2b2b;
+            margin-bottom: 1px;
+        }
+
+        .entry-meta {
+            font-size: 10.5px;
+            color: #555;
+            margin-bottom: 3px;
+        }
+
+        .contact-line {
+            margin-bottom: 4px;
+        }
+
+        .contact-line:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-link {
+            color: #2b2b2b;
+            text-decoration: none;
+        }
+
+        ul {
+            margin: 4px 0 0;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        .skill-line {
+            margin-bottom: 3px;
+        }
+
+        .label {
+            font-weight: 700;
+        }
+
+        .summary {
+            margin: 0;
+            color: #343434;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="sidebar">
+            <div class="section">
+                <h2>Contact</h2>
+                <div class="contact-line">{{ phone }}</div>
+                <div class="contact-line">{{ email }}</div>
+                {% if location %}<div class="contact-line">{{ location }}</div>{% endif %}
+                {% if linkedin %}<div class="contact-line"><a class="contact-link" href="{{ linkedin }}">{{ linkedin }}</a></div>{% endif %}
+                {% if github %}<div class="contact-line"><a class="contact-link" href="{{ github }}">{{ github }}</a></div>{% endif %}
+                {% if portfolio %}<div class="contact-line"><a class="contact-link" href="{{ portfolio }}">{{ portfolio }}</a></div>{% endif %}
+            </div>
+
+            {% if personal_profile and (personal_profile.father_name or personal_profile.mother_name or personal_profile.hobbies or personal_profile.strengths or personal_profile.career_goal) %}
+            <div class="section">
+                <h2>Personal Profile</h2>
+                {% if personal_profile.father_name %}<div class="skill-line"><span class="label">Father:</span> {{ personal_profile.father_name }}</div>{% endif %}
+                {% if personal_profile.mother_name %}<div class="skill-line"><span class="label">Mother:</span> {{ personal_profile.mother_name }}</div>{% endif %}
+                {% if personal_profile.hobbies %}<div class="skill-line"><span class="label">Hobbies:</span> {{ personal_profile.hobbies | join(", ") }}</div>{% endif %}
+                {% if personal_profile.strengths %}<div class="skill-line"><span class="label">Strengths:</span> {{ personal_profile.strengths | join(", ") }}</div>{% endif %}
+                {% if personal_profile.languages_spoken %}<div class="skill-line"><span class="label">Languages:</span> {{ personal_profile.languages_spoken | join(", ") }}</div>{% endif %}
+                {% if personal_profile.career_goal %}<div class="muted">{{ personal_profile.career_goal }}</div>{% endif %}
+            </div>
+            {% endif %}
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="entry">
+                    <div class="entry-title">{{ education.degree }}</div>
+                    <div class="entry-meta">{{ education.college }}{% if education.year %} | {{ education.year }}{% endif %}</div>
+                    <div class="muted">CGPA: {{ cgpa }}</div>
+                </div>
+                {% for edu in education_history %}
+                <div class="entry">
+                    <div class="entry-title">{{ edu.degree }}</div>
+                    <div class="entry-meta">{{ edu.college }}{% if edu.year %} | {{ edu.year }}{% endif %}</div>
+                    {% if edu.cgpa %}
+                    <div class="muted">
+                        {% set deg = edu.degree | lower %}
+                        {% if "10th" in deg or "12th" in deg or "ssc" in deg or "hsc" in deg %}
+                        Percentage: {{ edu.cgpa }}%
+                        {% else %}
+                        CGPA: {{ edu.cgpa }}
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if skills.languages or skills.frameworks or skills.tools or skills.databases %}
+            <div class="section">
+                <h2>Skills</h2>
+                {% if skills.languages %}<div class="skill-line"><span class="label">Languages:</span> {{ skills.languages }}</div>{% endif %}
+                {% if skills.frameworks %}<div class="skill-line"><span class="label">Frameworks:</span> {{ skills.frameworks }}</div>{% endif %}
+                {% if skills.tools %}<div class="skill-line"><span class="label">Tools:</span> {{ skills.tools }}</div>{% endif %}
+                {% if skills.databases %}<div class="skill-line"><span class="label">Databases:</span> {{ skills.databases }}</div>{% endif %}
+            </div>
+            {% endif %}
+
+            {% if certifications %}
+            <div class="section">
+                <h2>Certifications</h2>
+                <ul>
+                    {% for cert in certifications %}
+                    <li>{{ cert.name }}{% if cert.organization %} | {{ cert.organization }}{% endif %}{% if cert.year %} | {{ cert.year }}{% endif %}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="main">
+            <h1>{{ name }}</h1>
+            <p class="subtitle">{{ role if role else "Professional Candidate" }}</p>
+
+            {% if summary %}
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p class="summary">{{ summary }}</p>
+            </div>
+            {% endif %}
+
+            {% if experience %}
+            <div class="section">
+                <h2>Work Experience</h2>
+                {% for exp in experience %}
+                <div class="entry">
+                    <div class="entry-title">{{ exp.role }}</div>
+                    <div class="entry-meta">{{ exp.company }}{% if exp.location %} | {{ exp.location }}{% endif %}</div>
+                    <div class="entry-meta">{{ exp.duration }}</div>
+                    {% if exp.description %}<div>{{ exp.description }}</div>{% endif %}
+                    {% if exp.points %}
+                    <ul>
+                        {% for point in exp.points %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if projects %}
+            <div class="section">
+                <h2>Projects</h2>
+                {% for project in projects %}
+                <div class="entry">
+                    <div class="entry-title">{{ project.title }}</div>
+                    <div class="entry-meta">{% if project.duration %}{{ project.duration }}{% endif %}{% if project.tech %} | {{ project.tech }}{% endif %}</div>
+                    {% if project.description %}<div>{{ project.description }}</div>{% endif %}
+                    {% if project.highlights %}
+                    <ul>
+                        {% for point in project.highlights %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if project.link %}<div class="entry-meta"><a class="contact-link" href="{{ project.link }}">{{ project.link }}</a></div>{% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if responsibilities %}
+            <div class="section">
+                <h2>Achievements</h2>
+                <ul>
+                    {% for item in responsibilities %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

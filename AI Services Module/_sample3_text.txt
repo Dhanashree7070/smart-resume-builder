@@ -1,0 +1,125 @@
+{
+  "id": "69a99961e06cda68e9891f0a",
+  "fullName": "Mrunali Patil",
+  "email": "mrunali@gmail.com",
+  "phone": "9876543210",
+  "linkedin": "https://linkedin.com/in/mrunali",
+  "github": "https://github.com/mrunali",
+  "portfolio": "https://mrunali.dev",
+  "profile_image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
+  "location": "Pune",
+  "cgpa": 9.2,
+  "role": "Software Engineer",
+  "summary": "Results-driven Computer Engineering student with hands-on experience in backend development, analytics, and ATS-focused resume systems.",
+  "template_type": "template4",
+  "skills": [
+    "Java",
+    "Python",
+    "MongoDB",
+    "Git",
+    "Spring Boot",
+    "Power BI"
+  ],
+  "education": [
+    {
+      "degree": "B.E. Computer Engineering",
+      "institution": "KITCOEK",
+      "year": "2023-2027",
+      "cgpa": 8.2
+    },
+    {
+      "degree": "HSC (12th)",
+      "institution": "ABC Junior College",
+      "year": "2021-2023",
+      "cgpa": 85.4
+    },
+    {
+      "degree": "SSC (10th)",
+      "institution": "XYZ School",
+      "year": "2019-2021",
+      "cgpa": 92.1
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Resume Builder",
+      "techStack": "Spring Boot, MongoDB, React",
+      "startDate": "Jan 2026",
+      "endDate": "Mar 2026",
+      "description": [
+        "Developed secure REST APIs with strong validation and exception handling.",
+        "Implemented JWT authentication and role-based authorization.",
+        "Integrated ATS scoring and template-driven PDF resume generation."
+      ],
+      "githubLink": "https://github.com/mrunali/resume-builder"
+    },
+    {
+      "title": "Student Analytics Dashboard",
+      "techStack": "Python, FastAPI, Power BI",
+      "startDate": "Aug 2025",
+      "endDate": "Nov 2025",
+      "description": [
+        "Built APIs for placement and performance analytics.",
+        "Prepared transformed datasets for dashboard visualizations.",
+        "Created KPI-driven reports for decision-making."
+      ],
+      "githubLink": "https://github.com/mrunali/student-analytics"
+    }
+  ],
+  "experience": [
+    {
+      "jobTitle": "Data Analytics Intern",
+      "company": "Krutanic",
+      "location": "Remote",
+      "startDate": "Jul 2024",
+      "endDate": "Oct 2024",
+      "responsibilities": [
+        "Performed data cleaning and preprocessing on large datasets.",
+        "Built Power BI dashboards for business KPIs.",
+        "Contributed to predictive modeling experiments."
+      ]
+    },
+    {
+      "jobTitle": "Backend Developer Intern",
+      "company": "TechNova",
+      "location": "Pune",
+      "startDate": "Jan 2025",
+      "endDate": "May 2025",
+      "responsibilities": [
+        "Designed and implemented REST APIs using Spring Boot.",
+        "Improved API response times through query optimization.",
+        "Collaborated with frontend team for integration and testing."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Data Analytics Internship",
+      "organization": "Krutanic",
+      "year": "2024"
+    },
+    {
+      "name": "Python for Data Science",
+      "organization": "NPTEL",
+      "year": "2025"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Smart India Hackathon",
+      "description": "Built Nagrik Aur Samvidhan platform for constitutional literacy."
+    },
+    {
+      "title": "Top 5 Finalist - College Hackathon",
+      "description": "Led backend integration and ATS scoring module."
+    }
+  ],
+  "personal_profile": {
+    "father_name": "Ramesh Patil",
+    "mother_name": "Sunita Patil",
+    "hobbies": ["Reading", "Badminton", "Public Speaking"],
+    "languages_spoken": ["English", "Hindi", "Marathi"],
+    "strengths": ["Teamwork", "Adaptability", "Problem Solving"],
+    "career_goal": "Build AI-driven products that improve education outcomes."
+  }
+}
